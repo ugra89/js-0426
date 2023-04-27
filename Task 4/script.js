@@ -34,8 +34,6 @@ const carsList = async () => {
 };
 carsList();
 
-
-
 /**  <main>
       <div class="wrapper">
         <div class="container">
@@ -46,4 +44,4 @@ carsList();
         </div>
       </div>
     </main>
-    
+    */
