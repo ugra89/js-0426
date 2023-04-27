@@ -9,3 +9,31 @@ būti stilizuota su CSS ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+try {
+  fetch(ENDPOINT)
+    .then((response) => response.json())
+    .then((cars) => {
+      cars.sort((a, b) => a.brand.localeCompare(b.brand));
+      console.log(cars);
+    });
+} catch (err) {
+  console.error(err);
+}
+
+/**  <main>
+      <div class="wrapper">
+        <div class="container">
+          <h1>Our Cars List</h1>
+          <div id="output">
+            <!-- Results goes here -->
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    
+    [
+  {
+    "brand": "Seat",
+    "models": [
+      "Alhambra",*/
