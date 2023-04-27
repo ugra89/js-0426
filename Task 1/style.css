@@ -51,6 +51,18 @@ form {
   background-color: #000;
   color: #fff;
 }
+#output {
+  font-size: 1.25rem;
+  background-color: wheat;
+  border-radius: 50%;
+  width: 26rem;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  margin-left: 20rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
