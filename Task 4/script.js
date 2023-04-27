@@ -21,9 +21,8 @@ const carsList = async () => {
     cars.forEach((car) => {
       const card = document.createElement('div');
       card.classList.add('cars-Card');
-      card.innerHTML = `<h2>Brand: ${
-        car.brand
-      }</h2> <h3>Models:</h3> <ul>${car.models
+      card.innerHTML = `<h2>Brand:
+       ${car.brand}</h2> <h3>Models:</h3> <ul>${car.models
         .map((model) => `<li>${model}</li>`)
         .join('')}</ul>`;
       output.append(card);
@@ -33,15 +32,3 @@ const carsList = async () => {
   }
 };
 carsList();
-
-/**  <main>
-      <div class="wrapper">
-        <div class="container">
-          <h1>Our Cars List</h1>
-          <div id="output">
-            <!-- Results goes here -->
-          </div>
-        </div>
-      </div>
-    </main>
-    */
