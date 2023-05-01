@@ -53,7 +53,13 @@ form {
 }
 #output {
   font-size: 1.25rem;
-  background-color: wheat;
+  background: radial-gradient(
+    circle at 100%,
+    #fce702,
+    #d0c014 50%,
+    #b3a937 75%,
+    #b4a82c 75%
+  );
   border-radius: 50%;
   width: 26rem;
   height: 26rem;
@@ -62,6 +68,7 @@ form {
   margin-left: 20rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-shadow: 0.25rem 1rem 1rem 0.05rem rgba(61, 56, 56, 0.2);
 }
 
 /* Tablet */
