@@ -17,7 +17,9 @@ const outputounces = document.createElement('div');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
+  outputpounds.innerHTML = ' ';
+  outputgrams.innerHTML = ' ';
+  outputounces.innerHTML = ' ';
   function convert(primaryValue) {
     const pounds = primaryValue * 2.2046;
     const grams = primaryValue / 0.001;
@@ -35,12 +37,13 @@ form.addEventListener('submit', (e) => {
     resultOutputounces.textContent = `Jūsų svoris (${primaryValue}kg) yra lygus ${ounces.toFixed(
       2
     )} uncijomis.`;
+
     outputpounds.append(resultOutputpounds);
     outputgrams.append(resultOutputgrams);
     outputounces.append(resultOutputounces);
-    output.appendChild(outputpounds);
-    output.appendChild(outputgrams);
-    output.appendChild(outputounces);
+    output.append(outputpounds);
+    output.append(outputgrams);
+    output.append(outputounces);
   }
 
   const kg = Number(input.value);
